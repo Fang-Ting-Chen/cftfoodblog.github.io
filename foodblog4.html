@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODBLOG4</title>
+    <style>
+        body{
+            margin: 0px;
+            background-color: #FFE4B5;
+        }
+
+        h1,h2,h3{
+            text-align: center;
+        }
+
+        /* header1 */
+        .header1{
+            display: flex;
+            flex-direction: row;
+            background-color:#A0522D;
+            color: white;
+        }
+        .platform > a >img{
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+        }
+        .platform{
+            flex-grow:  1;
+            align-self: center;
+        }
+
+        /* menu */
+        .menuA > a{
+            display: block;
+            width: 100%;
+            text-align: center;
+            color: black;
+            text-decoration-line: none;
+            padding: 25px 0;
+            font-size: 25px;
+        }
+        .menuA:hover{
+            background-color: rgb(160,160,160);
+        }
+        .menuA > a:hover{
+            color:white;   
+        }
+        .menuA:active{
+            background-color: black;
+        }
+        .menuA > a:active{
+            color:white;   
+        }
+
+        /* large devices (600px and up)  */
+        @media only screen and (min-width: 600px){
+            .platform > a >img{
+                width: 30px;
+                height: 30px;
+                margin-right: 10px;
+            }
+            .platform{
+                flex-grow:  0.5;
+                align-self: center;
+            }
+
+        }
+        /* large devices (1200px and up)  */
+        @media only screen and (min-width: 1200px){
+            .platform > a >img{
+                width: 35px;
+                height: 35px;
+                margin-right: 10px;
+            }
+            .platform{
+                flex-grow:  0.5;
+                align-self: center;
+            }
+        }
+
+
+    </style>
+</head>
+<body>    
+    <!--header1-->
+    <div class="header1">
+        <div style="flex-grow:  1.5;align-self: center;margin-left: 10px;"><a href="menue"><img src="photo/x-button.png" alt="menue" width="30" height="30"></a></div>
+        <div style="flex-grow: 7"><h1>FOOD BLOG</h1></div>
+        <div class="platform">
+            <a href="menue"><img src="photo/cfb.png" alt="fb" ></a>
+            <a href="menue"><img src="photo/cins.png" alt="ins"></a>
+            <a href="menue"><img src="photo/twitter.png" alt="twitter"></a>
+        </div>
+    </div>
+
+    <!--menu-->
+    <div class="menu">
+        <div class="menuA"><a href="foodblog1_1.html">HOME</a></div>
+        <div class="menuA"><a href="foodblog2.html">ABOUT</a></div>
+    </div>
+    
+</body>
+</html>
